@@ -3,8 +3,8 @@
 @section('content')
     <div class="row filter-row">
         <div class="btn-group btn-group-sm" role="group" aria-label="Filter">
-            <button type="button" class="filter active btn" data-action="active">Active</button>
-            <button type="button" class="filter deleted btn btn-primary" data-action="deleted">Deleted</button>
+            <button type="button" class="filter btn" data-status="1">Active</button>
+            <button type="button" class="filter btn btn-primary" data-status="0">Deleted</button>
         </div>
     </div>
     <div class="row photos-row">
@@ -21,14 +21,16 @@
             </div>
         @endforeach
     </div>
+    <!-- TODO: make this menu sticky to visible part of the display -->
+    <!-- TODO: Update styles for smaller resolutions -->
     <footer class="footer">
-        <div class="container">
-            <button type="button" class="btn btn-primary" aria-label="Delete">
-                <span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
+        <div class="container controls">
+            <button type="button" class="btn btn-primary delete" aria-label="Delete">
+                <span class="glyphicon glyphicon-trash delete" aria-hidden="true"></span>
             </button>
-            <button type="button" class="btn btn-primary" aria-label="Download">
-                <span class="glyphicon glyphicon-download-alt" aria-hidden="true"></span>
-            </button>
+            <a href="#" target="_blank" class="btn btn-primary download" aria-label="Download">
+                <span class="glyphicon glyphicon-download-alt download" aria-hidden="true"></span>
+            </a>
         </div>
     </footer>
 @endsection

@@ -13,7 +13,7 @@ class PhotosTableSeeder extends Seeder
     {
         $insert = [
             [
-                'name' => 'Para Basketball',
+                'name' => 'Wheelchair basketball',
                 'image' => 'image-1.jpg',
                 'thumbnail' => 'image-1.png',
                 'status' => 1
