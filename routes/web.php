@@ -13,3 +13,10 @@
 
 
 Route::get('/', 'PhotoController@index');
+Route::get('/show/{status?}', 'PhotoController@show');
+Route::get('/controls/{photo}', 'PhotoController@controls');
+Route::get('/edit', 'PhotoController@edit');
+Route::post('/store', 'PhotoController@store');
+Route::delete('/destroy/{photo}', 'PhotoController@destroy');
+Route::patch('/restore/{photo}', 'PhotoController@restore');
+Route::get('/download/{photo}', 'PhotoController@download');

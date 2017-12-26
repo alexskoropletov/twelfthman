@@ -29,14 +29,39 @@ body {
     padding: 10px;
 }
 
-.filter-row {
-    padding-right: 40px;
-    text-align: right;
+.filter-row .filter-group {
+    float: right;
+}
+
+.filter-row .add-group {
+    margin-left: 20px;
 }
 
 .filter-row .btn {
     padding-left: 40px !important;
     padding-right: 40px !important;
+}
+
+.filter-row .add {
+    float: left;
+    margin-left: 20px;
+}
+
+.photos-row {
+    text-align: center;
+}
+
+.photos-row form {
+    background: #fff;
+    text-align: left;
+    padding: 15px;
+    border-radius: 4px;
+    width: 300px;
+    margin: 10px auto;
+}
+
+.photos-row .form-loading {
+    text-align: center;
 }
 
 .btn {
@@ -45,10 +70,6 @@ body {
 
 .btn-primary {
     background: #5c607e;
-}
-
-.highlight .caption {
-    font-weight: bold;
 }
 
 .photo-and-caption {
@@ -73,12 +94,21 @@ body {
     text-align: center;
 }
 
+.highlight .photo-and-caption {
+    border-color: #5c607e;
+}
+
+.highlight .caption {
+    font-weight: bold;
+}
+
 .footer {
     position: absolute;
     bottom: 0;
     height: 100px;
     text-align: center;
     color: #fff;
+    width: 100%;
 }
 
 .footer .container {
@@ -88,4 +118,26 @@ body {
     padding: 10px;
     height: 100px;
     display: none;
+}
+
+@media (min-width: 970px) {
+    .filter-row .filter-group {
+        margin-right: 20px;
+    }
+
+    .photo-and-caption {
+        width: 202px;
+    }
+
+    .photo,
+    .photo img {
+        width: 200px;
+    }
+}
+
+
+@media (min-width: 1200px) {
+    .filter-row .filter-group {
+        margin-right: 60px;
+    }
 }
